@@ -79,7 +79,9 @@ font-size: 40px;
     cursor: pointer;
 }
 .btn-sm{
-    font-size: 21px;
+    font-size: 14px;
+    padding: 7px 13px ;
+    margin: 10px 0;
 }
 .btn:hover{
     background-color: white;
@@ -128,4 +130,19 @@ flex-direction: row;
 #form-check input{
     width: 24px;
     margin: 3px 0;
+}
+
+/* blog */
+.blogItem {
+margin: 20px;
+font-family: 'Fira Sans', sans-serif;
+}
+
+h1 h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 23px;
+}
+
+ p{
+    font-family: 'Roboto', sans-serif;
 }
