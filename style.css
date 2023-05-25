@@ -5,13 +5,16 @@
     padding: 0;
 }
 .sidebar{
+    position:absolute;
     background-color:rgb(128, 128, 128);
-    width: 10vw;
+    width: 250px;
     font-family: 'Fira Sans', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
 }
 .sidebar nav{
-padding: 28px;
-height: 100vh;
+padding: 45px;
+/* height: 100vh; */
 }
 
 .sidebar nav li{
@@ -43,22 +46,23 @@ height: 100vh;
 }
 
 .devInfo{
+    font-size: 16px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
 }
 .hello{
-font-size:65px;
+font-size:3em;
 font-family: 'Roboto', sans-serif;
 }
 .name{
-font-size: 50px;
+font-size: 3em;
 font-weight: bold;
 font-family: 'Fira Sans', sans-serif;
 }
 .about{
-font-size: 40px;
+font-size: 2.5em;
 }
 .moreabout{
     margin-top: 23px;
@@ -66,15 +70,16 @@ font-size: 40px;
     font-family: 'Fira Sans', sans-serif;
 }
 .buttons{
-    margin-top: 34px;
+    margin-top: 2.2em;
+    font-size: 16px;
 }
 .btn{
     border-radius: 22px;
     padding: 10px 14px;
-    font-size: 21px;
+    font-size: 2em;
     color: white;
     background-color: dodgerblue;
-    margin: 0 3px;
+    margin:  3px 3px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -94,14 +99,15 @@ font-size: 40px;
 /* contact page */
 .contactform{
     padding: 0 34px;
-    padding-top: 144px;
+    /* padding-top: 144px; */
     font-family: 'Fira Sans', sans-serif;
+    margin: 0 88px;
 }
 
 .contactform h1{
     font-family: 'Roboto', sans-serif;
     /* text-align: center; */
-    padding: 12px 0;
+    /* padding: 12px 0; */
 }
 
 .contactform form div{
@@ -111,10 +117,13 @@ font-size: 40px;
 flex-direction: column;
 }
 .contactform form div input{
-    width: 26vw;
+    /* width: 26vw; */
     border-radius: 5px;
     margin: 6px 0 0 0 ;
     padding: 3px;
+}
+.contactform form form{
+    margin: 0 40px;
 }
 
 #emailHelp{
@@ -137,8 +146,11 @@ flex-direction: row;
 margin: 20px;
 font-family: 'Fira Sans', sans-serif;
 }
+.blogContainer{
+    margin: 0 88px;
+}
 
-h1 h2{
+h1{
     font-family: 'Fira Sans', sans-serif;
     margin: 23px;
 }
@@ -146,3 +158,82 @@ h1 h2{
  p{
     font-family: 'Roboto', sans-serif;
 }
+.intro{
+    margin: 0 88px;
+}
+
+.intro h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+}
+
+.intro p{
+    font-family: 'Roboto', sans-serif;
+    margin: 12px;
+}
+
+.skillcontainer{
+    padding: 12px;
+}
+
+.skillItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+.hundred{
+    width: 265px;
+    background-color: blueviolet;
+}
+.fifty{
+    width: 125px;
+    background-color: aqua;
+}
+.t5{
+    width: 75px;
+    background-color: yellow;
+}
+.sidebarGo{
+    transform: translate(-443px,0px);
+    position: absolute;
+} 
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.cross{
+margin-left: 155px;
+margin-top: 10px;
+}
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+ @media (max-width:1615px) {
+    *{
+    /* background-color: rgb(255, 0, 93); */
+}
+.buttons{
+    font-size: 6px;
+}
+.devInfo{
+    font-size:10px;
+}
+/* .devPic{
+    display: none;
+}  */
+.intro, .blogContainer, .contactform{
+    margin:50px 8px;
+}
+} 
